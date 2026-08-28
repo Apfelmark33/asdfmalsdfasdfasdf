@@ -1,0 +1,793 @@
+<mxfile host="app.diagrams.net" pages="9">
+  <diagram id="end-to-end-process" name="1 End-to-End-Prozess">
+    <mxGraphModel dx="1569" dy="960" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="main-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="IT Service Management – End-to-End-Prozess" vertex="1">
+          <mxGeometry height="50" width="1250" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="main-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="Gemeinsamer Ablauf für Incidents und Service Requests" vertex="1">
+          <mxGeometry height="30" width="1000" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="main-user-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#8CA614;swimlaneFillColor=#FFFFFF;strokeColor=#8CA614;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="USER" vertex="1">
+          <mxGeometry height="850" width="340" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="main-feedback" parent="main-user-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Rückmeldung erhalten&lt;br&gt;und Ergebnis prüfen" vertex="1">
+          <mxGeometry height="80" width="240" x="80" y="536.5" as="geometry" />
+        </mxCell>
+        <mxCell id="main-solved" parent="main-user-lane" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Gelöst bzw.&lt;br&gt;erfüllt?" vertex="1">
+          <mxGeometry height="105" width="160" x="85" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e12" edge="1" parent="main-user-lane" source="main-feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;exitX=0.342;exitY=0.969;exitDx=0;exitDy=0;exitPerimeter=0;" target="main-solved" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="162.08" y="614" />
+              <mxPoint x="162.08" y="614" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main-form" parent="main-user-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="USER füllt das Portalformular aus&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Incident oder Service Request mit Pflichtfeldern&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="240" x="70" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="main-service" parent="main-user-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="IT-Service auswählen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;z. B. E-Mail, VPN, Laptop, Drucker&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="240" x="60" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e2" edge="1" parent="main-user-lane" source="main-service" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-form" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-it-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=light-dark(#8B6130,#51AFE7);swimlaneFillColor=#FFFFFF;strokeColor=light-dark(#8B6130,#51AFE7);fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;gradientColor=none;" value="IT" vertex="1">
+          <mxGeometry height="850" width="780" x="380" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="main-ticket" parent="main-it-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ticket erfassen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Nummer, Zeitpunkt und Status&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="210" x="75" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="main-approval" parent="main-it-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Anfrage prüfen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;falls nötig genehmigen lassen&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="215" x="490" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="YTJ79Q2jzWaso2VeFn-Q-1" edge="1" parent="main-it-lane" source="main-incident" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="main-work">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-incident" parent="main-it-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="INCIDENT-TICKET&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;1st Level Support prüft Service und Störungsart&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="245" x="70" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="main-close" parent="main-it-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ticket dokumentieren&lt;br&gt;und schließen" vertex="1">
+          <mxGeometry height="60" width="230" x="110" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="main-end" parent="main-it-lane" style="ellipse;whiteSpace=wrap;html=1;fillColor=#8CA614;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Calibri;" value="Vorgang beendet" vertex="1">
+          <mxGeometry height="60" width="170" x="460" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e15" edge="1" parent="main-it-lane" source="main-close" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-work" parent="main-it-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Incident lösen oder Request erfüllen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;passenden Bearbeitungsablauf verwenden&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="260" x="280" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e10" edge="1" parent="main-it-lane" source="main-approval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-work" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-source-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=light-dark(#5F4216,#4A280E);swimlaneFillColor=#E7E6E6;strokeColor=light-dark(#5F4216,#4A280E);fontStyle=1;fontSize=16;rounded=0;fontColor=light-dark(#000000,#9E9E9E);align=center;verticalAlign=middle;fontFamily=Calibri;" value="QUELLEN" vertex="1">
+          <mxGeometry height="850" width="400" x="1160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="main-a" parent="main-source-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;Anna – Standardanfragen&lt;/b&gt;&lt;br&gt;&lt;br&gt;Anfragearten, Formular und Pflichtfelder" vertex="1">
+          <mxGeometry height="105" width="300" x="70" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="main-k" parent="main-source-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;Kenneth – Servicekatalog&lt;/b&gt;&lt;br&gt;&lt;br&gt;Services, Kategorien und Zielgruppen" vertex="1">
+          <mxGeometry height="105" width="300" x="70" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="main-f" parent="main-source-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;Finn – Incident Management&lt;/b&gt;&lt;br&gt;&lt;br&gt;Störungen, Beispieltickets und Prioritäten" vertex="1">
+          <mxGeometry height="105" width="300" x="70" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="main-start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#8CA614;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Calibri;" value="Hilfe oder Leistung benötigt" vertex="1">
+          <mxGeometry height="75" width="150" x="135" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="main-type" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Störung oder&lt;br&gt;Standardanfrage?" vertex="1">
+          <mxGeometry height="110" width="180" x="715" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="main-request" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="REQUEST-TICKET&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;1st Level Support&amp;nbsp;prüft Anfrageart und Pflichtfelder&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="245" x="855" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e1" edge="1" parent="1" source="main-start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-service" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e3" edge="1" parent="1" source="main-form" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-ticket" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e4" edge="1" parent="1" source="main-ticket" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-type" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e5" edge="1" parent="1" source="main-type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-incident" value="Störung">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e6" edge="1" parent="1" source="main-type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-request" value="Anfrage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e8" edge="1" parent="1" source="main-request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-approval" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e11" edge="1" parent="1" source="main-work" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="main-feedback" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e13" edge="1" parent="1" source="main-solved" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=light-dark(#5F4216,#637A00);fontColor=light-dark(#5F4216,#637A00);fontFamily=Calibri;" target="main-close" value="Ja">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="852.5" />
+              <mxPoint x="320" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main-e14" edge="1" parent="1" source="main-solved" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=light-dark(#5F4216,#C86827);fontColor=light-dark(#5F4216,#C86827);fontFamily=Calibri;" target="main-work" value="Nein">
+          <mxGeometry relative="1" x="0.0745" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="330" y="850" />
+              <mxPoint x="330" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main-e16" edge="1" parent="1" source="main-k" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;dashed=1;strokeColor=#8B6130;fontColor=#5F4216;fontFamily=Calibri;" target="main-service" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e17" edge="1" parent="1" source="main-f" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;dashed=1;strokeColor=#8B6130;fontColor=#5F4216;fontFamily=Calibri;" target="main-incident" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="main-e18" edge="1" parent="1" source="main-a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;dashed=1;strokeColor=#8B6130;fontColor=#5F4216;fontFamily=Calibri;" target="main-request" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Kopie von 1 End-to-End-Prozess" id="79ixtCZcm6chBwY4mPCb">
+    <mxGraphModel dx="1569" dy="960" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-0" />
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-1" parent="lAMMtlT9lW3FtCRExSpe-0" />
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-2" parent="lAMMtlT9lW3FtCRExSpe-1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="IT Service Management – End-to-End-Prozess" vertex="1">
+          <mxGeometry height="50" width="1250" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-3" parent="lAMMtlT9lW3FtCRExSpe-1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="Gemeinsamer Ablauf für Incidents und Service Requests" vertex="1">
+          <mxGeometry height="30" width="1000" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-11" parent="lAMMtlT9lW3FtCRExSpe-1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=light-dark(#8B6130,#51AFE7);swimlaneFillColor=#FFFFFF;strokeColor=light-dark(#8B6130,#51AFE7);fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;gradientColor=none;" value="IT" vertex="1">
+          <mxGeometry height="1035" width="780" x="370" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-14" parent="lAMMtlT9lW3FtCRExSpe-11" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="INCIDENT-TICKET&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;1st Level Support&amp;nbsp;prüft Service und Störungsart&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="245" x="120" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-1" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="lAMMtlT9lW3FtCRExSpe-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="GhdOYlGo0iqhcoy72LwP-0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-15" parent="lAMMtlT9lW3FtCRExSpe-11" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Priorität festlegen" vertex="1">
+          <mxGeometry height="75" width="215" x="135" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-16" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="lAMMtlT9lW3FtCRExSpe-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="lAMMtlT9lW3FtCRExSpe-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-9" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="GhdOYlGo0iqhcoy72LwP-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="GhdOYlGo0iqhcoy72LwP-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-0" parent="lAMMtlT9lW3FtCRExSpe-11" style="whiteSpace=wrap;html=1;fontSize=13;fontFamily=Calibri;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;rounded=1;fontStyle=1;" value="Ticket wird nach&amp;nbsp;&lt;div&gt;Duplikaten durchsucht&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67.5" width="215" x="135" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-5" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="GhdOYlGo0iqhcoy72LwP-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="537.5" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-16" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="GhdOYlGo0iqhcoy72LwP-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="GhdOYlGo0iqhcoy72LwP-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-2" parent="lAMMtlT9lW3FtCRExSpe-11" style="whiteSpace=wrap;html=1;fontSize=13;fontFamily=Calibri;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;rounded=1;fontStyle=1;" value="Bekannte Lösung in DB suchen" vertex="1">
+          <mxGeometry height="67.5" width="215" x="430" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-11" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="GhdOYlGo0iqhcoy72LwP-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="GhdOYlGo0iqhcoy72LwP-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-12" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="GhdOYlGo0iqhcoy72LwP-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="GhdOYlGo0iqhcoy72LwP-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-7" parent="lAMMtlT9lW3FtCRExSpe-11" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Duplikat gefunden" vertex="1">
+          <mxGeometry height="80" width="80" x="440" y="252.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-8" parent="lAMMtlT9lW3FtCRExSpe-11" style="rounded=1;whiteSpace=wrap;html=1;" value="Tickts werden zu einem einzigen Zusammgefasst" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="262.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GhdOYlGo0iqhcoy72LwP-15" parent="lAMMtlT9lW3FtCRExSpe-11" style="whiteSpace=wrap;html=1;fontSize=13;fontFamily=Calibri;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;rounded=1;fontStyle=1;" value="MIt bekannter Lösung fortfahren" vertex="1">
+          <mxGeometry height="67.5" width="147.5" x="168.75" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="fOTz1e6TL6kCOLlLzGew-2" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="fOTz1e6TL6kCOLlLzGew-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="fOTz1e6TL6kCOLlLzGew-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcYL7u29X9Y9efUO2LZE-1" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="fOTz1e6TL6kCOLlLzGew-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="NcYL7u29X9Y9efUO2LZE-0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fOTz1e6TL6kCOLlLzGew-0" parent="lAMMtlT9lW3FtCRExSpe-11" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Im 1st Level lösbar?" vertex="1">
+          <mxGeometry height="90" width="92.5" x="491.25" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="fOTz1e6TL6kCOLlLzGew-1" parent="lAMMtlT9lW3FtCRExSpe-11" style="rounded=1;whiteSpace=wrap;html=1;" value="Incident lösen" vertex="1">
+          <mxGeometry height="60" width="120" x="305" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="lGAnbQmGMSf0YIFoSlVe-10" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="NcYL7u29X9Y9efUO2LZE-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lGAnbQmGMSf0YIFoSlVe-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcYL7u29X9Y9efUO2LZE-0" parent="lAMMtlT9lW3FtCRExSpe-11" style="rounded=1;whiteSpace=wrap;html=1;" value="An 2nd Level Support weitergeben" vertex="1">
+          <mxGeometry height="60" width="120" x="477.5" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="lGAnbQmGMSf0YIFoSlVe-11" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="lGAnbQmGMSf0YIFoSlVe-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="lGAnbQmGMSf0YIFoSlVe-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lGAnbQmGMSf0YIFoSlVe-12" edge="1" parent="lAMMtlT9lW3FtCRExSpe-11" source="lGAnbQmGMSf0YIFoSlVe-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lGAnbQmGMSf0YIFoSlVe-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lGAnbQmGMSf0YIFoSlVe-7" parent="lAMMtlT9lW3FtCRExSpe-11" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Im 2nd Level lösbar?" vertex="1">
+          <mxGeometry height="90" width="92.5" x="491.25" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="lGAnbQmGMSf0YIFoSlVe-8" parent="lAMMtlT9lW3FtCRExSpe-11" style="rounded=1;whiteSpace=wrap;html=1;" value="Incident lösen" vertex="1">
+          <mxGeometry height="60" width="120" x="305" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="lGAnbQmGMSf0YIFoSlVe-9" parent="lAMMtlT9lW3FtCRExSpe-11" style="rounded=1;whiteSpace=wrap;html=1;" value="An 3rd Level Support weitergeben" vertex="1">
+          <mxGeometry height="60" width="120" x="477.5" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-23" parent="lAMMtlT9lW3FtCRExSpe-1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=light-dark(#5F4216,#4A280E);swimlaneFillColor=#E7E6E6;strokeColor=light-dark(#5F4216,#4A280E);fontStyle=1;fontSize=16;rounded=0;fontColor=default;align=center;verticalAlign=middle;fontFamily=Calibri;" value="QUELLEN" vertex="1">
+          <mxGeometry height="1035" width="400" x="1150" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lAMMtlT9lW3FtCRExSpe-27" parent="lAMMtlT9lW3FtCRExSpe-23" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;span style=&quot;color: light-dark(rgb(176, 176, 176), rgb(196, 196, 196));&quot;&gt;&lt;span&gt;&lt;b style=&quot;font-family: Helvetica;&quot;&gt;Prioritätsmodell&lt;/b&gt;&lt;br style=&quot;font-family: Helvetica;&quot;&gt;&lt;br style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;font-family: Helvetica;&quot;&gt;&lt;b&gt;HOCH&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-family: Helvetica;&quot;&gt; – sofort / innerhalb 1 Stunde&lt;/span&gt;&lt;br style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;font-family: Helvetica;&quot;&gt;&lt;b&gt;MITTEL&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-family: Helvetica;&quot;&gt; – innerhalb 4 Stunden&lt;/span&gt;&lt;br style=&quot;font-family: Helvetica;&quot;&gt;&lt;font style=&quot;font-family: Helvetica;&quot;&gt;&lt;b&gt;NIEDRIG&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-family: Helvetica;&quot;&gt; – inne&lt;/span&gt;&lt;/span&gt;&lt;span&gt;rhalb 1–2 Arbeitstagen&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="145" width="300" x="70" y="332.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="incident-workflow" name="4 Incident Workflow">
+    <mxGraphModel dx="1883" dy="1152" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="inc-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="Incident Management – Arbeitsablauf" vertex="1">
+          <mxGeometry height="50" width="1250" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="Ziel: unterbrochenen oder eingeschränkten Service möglichst schnell wiederherstellen" vertex="1">
+          <mxGeometry height="30" width="1100" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-user-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#8CA614;swimlaneFillColor=#FFFFFF;strokeColor=#8CA614;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="USER" vertex="1">
+          <mxGeometry height="980" width="350" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-report" parent="inc-user-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Störung melden&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Service, Beschreibung, Betroffene,&lt;br&gt;Arbeitsfähigkeit, Standort, Anhang&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="60" y="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-reply" parent="inc-user-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Rückmeldung erhalten&lt;br&gt;und Ergebnis testen" vertex="1">
+          <mxGeometry height="80" width="250" x="130" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-system-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#5F4216;swimlaneFillColor=#E7E6E6;strokeColor=#5F4216;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="SYSTEM" vertex="1">
+          <mxGeometry height="980" width="420" x="390" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-it-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#8B6130;swimlaneFillColor=#FFFFFF;strokeColor=#8B6130;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="IT" vertex="1">
+          <mxGeometry height="980" width="750" x="810" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-ok" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Problem wirklich&lt;br&gt;gelöst?" vertex="1">
+          <mxGeometry height="105" width="180" x="125" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-create" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Incident-Ticket anlegen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Ticketnummer, Zeitstempel; Reaktionszeit startet&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="250" x="475" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-priority" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Priorität vorschlagen und bestätigen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Auswirkung × Dringlichkeit&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="250" x="475" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-sla" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Lösungsziel anwenden&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Frist passend zur bestätigten Priorität&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="250" x="475" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-close" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ticket schließen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Verlauf und SLA speichern&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="250" x="475" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-triage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ticket prüfen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Vollständigkeit, Service, Duplikat,&lt;br&gt;Priorität und Zuständigkeit&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="265" x="900" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-assign" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Team und Bearbeiter zuweisen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Status: Zugewiesen&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="270" x="1210" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-first" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Erste qualifizierte Antwort senden&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Reaktions-SLA beenden&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="280" x="885" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-known" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Bekannte Lösung&lt;br&gt;vorhanden?" vertex="1">
+          <mxGeometry height="110" width="190" x="1245" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-standard" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Standardlösung durchführen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;z. B. Anleitung oder Runbook&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="280" x="865" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-analyze" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Fehler analysieren&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Ursache eingrenzen und Tests durchführen&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="280" x="1210" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-can" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Durch IT-Support&lt;br&gt;lösbar?" vertex="1">
+          <mxGeometry height="110" width="190" x="1255" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-escalate" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="An Spezialisten eskalieren&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;alle bisherigen Erkenntnisse übergeben&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="280" x="865" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-test" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Lösung durchführen und testen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Service wiederherstellen und Funktion prüfen&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="290" x="1035" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-solved" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Maßnahmen und Lösung dokumentieren&lt;br&gt;und User informieren" vertex="1">
+          <mxGeometry height="85" width="290" x="1035" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e1" edge="1" parent="1" source="inc-report" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-create" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e2" edge="1" parent="1" source="inc-create" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-priority" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e3" edge="1" parent="1" source="inc-priority" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-sla" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e4" edge="1" parent="1" source="inc-sla" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-triage" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e5" edge="1" parent="1" source="inc-triage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-assign" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e6" edge="1" parent="1" source="inc-assign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-first" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1190.07" y="225.07" />
+              <mxPoint x="1190.07" y="375.07" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inc-e7" edge="1" parent="1" source="inc-first" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-known" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e8" edge="1" parent="1" source="inc-known" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-standard" value="Ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e9" edge="1" parent="1" source="inc-known" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-analyze" value="Nein">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e10" edge="1" parent="1" source="inc-analyze" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-can" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e11" edge="1" parent="1" source="inc-can" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-test" value="Ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e12" edge="1" parent="1" source="inc-can" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-escalate" value="Nein">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e13" edge="1" parent="1" source="inc-standard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-test" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e14" edge="1" parent="1" source="inc-escalate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-test" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e15" edge="1" parent="1" source="inc-test" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-solved" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e16" edge="1" parent="1" source="inc-solved" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-reply" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e17" edge="1" parent="1" source="inc-reply" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-ok" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e18" edge="1" parent="1" source="inc-ok" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-close" value="Ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc-e19" edge="1" parent="1" source="inc-ok" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="inc-analyze" value="Nein">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="1010" />
+              <mxPoint x="760" y="1010" />
+              <mxPoint x="760" y="470" />
+              <mxPoint x="1350" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="request-workflow" name="5 Service Request Workflow">
+    <mxGraphModel dx="1177" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="req-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="Service Request Management – Arbeitsablauf" vertex="1">
+          <mxGeometry height="50" width="1250" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="req-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="Ziel: standardisierte Leistung kontrolliert prüfen, genehmigen und erfüllen" vertex="1">
+          <mxGeometry height="30" width="1100" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="req-user-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#8CA614;swimlaneFillColor=#FFFFFF;strokeColor=#8CA614;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="USER" vertex="1">
+          <mxGeometry height="980" width="350" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="req-add" parent="req-user-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Fehlende Angaben ergänzen&lt;br&gt;und erneut absenden" vertex="1">
+          <mxGeometry height="80" width="260" x="70" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="req-form" parent="req-user-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="USER füllt das Anfrageformular aus&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Service, Anfrageart, Begründung,&lt;br&gt;Termin, betroffene Person, Anhang&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="260" x="70" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="req-feedback" parent="req-user-lane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ergebnis erhalten&lt;br&gt;und prüfen" vertex="1">
+          <mxGeometry height="75" width="250" x="70" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="req-system-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#5F4216;swimlaneFillColor=#E7E6E6;strokeColor=#5F4216;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="SYSTEM" vertex="1">
+          <mxGeometry height="980" width="420" x="390" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="req-it-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#8B6130;swimlaneFillColor=#FFFFFF;strokeColor=#8B6130;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="IT / GENEHMIGER" vertex="1">
+          <mxGeometry height="980" width="750" x="810" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="req-approved" parent="req-it-lane" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Genehmigt?" vertex="1">
+          <mxGeometry height="110" width="180" x="450" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="req-complete" parent="req-it-lane" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Angaben&lt;br&gt;vollständig?" vertex="1">
+          <mxGeometry height="110" width="180" x="480" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="req-ok" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Anfrage vollständig&lt;br&gt;erfüllt?" vertex="1">
+          <mxGeometry height="105" width="180" x="125" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="req-create" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Request-Ticket anlegen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Ticketnummer, Zeitstempel; Reaktionszeit startet&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="250" x="475" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="req-rule" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Request-Typ und Zielzeit anwenden&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Formular, Zuständigkeit und Erfüllungsfrist&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="250" x="475" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="req-approval" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Genehmigung&lt;br&gt;notwendig?" vertex="1">
+          <mxGeometry height="105" width="180" x="510" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="req-close" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ticket schließen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Verlauf und SLA speichern&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="250" x="475" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="req-review" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="IT prüft die Anfrage&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Vollständigkeit und Voraussetzungen&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="270" x="875" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="req-approve" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Genehmigung anfordern&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Status: Wartet auf Genehmigung&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="270" x="875" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="req-reject" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ablehnung begründen&lt;br&gt;und User informieren" vertex="1">
+          <mxGeometry height="75" width="250" x="1230" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="req-instruction" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Standardarbeitsanweisung öffnen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;festgelegte Schritte und Checkliste&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="300" x="855" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="req-work" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Vorgegebene Schritte ausführen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;z. B. bereitstellen, konfigurieren und zuordnen&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="855" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="req-test" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ergebnis prüfen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Funktion, Vollständigkeit und Berechtigung testen&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="290" x="1210" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="req-done" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ergebnis und verwendete Schritte dokumentieren&lt;br&gt;und User informieren" vertex="1">
+          <mxGeometry height="85" width="320" x="1025" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e1" edge="1" parent="1" source="req-form" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-create" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e2" edge="1" parent="1" source="req-create" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-rule" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e3" edge="1" parent="1" source="req-rule" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-review" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e4" edge="1" parent="1" source="req-review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-complete" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e5" edge="1" parent="1" source="req-complete" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-add" value="Nein">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e6" edge="1" parent="1" source="req-add" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-review" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e7" edge="1" parent="1" source="req-complete" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-approval" value="Ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e8" edge="1" parent="1" source="req-approval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-approve" value="Ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e9" edge="1" parent="1" source="req-approval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-instruction" value="Nein">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e10" edge="1" parent="1" source="req-approve" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-approved" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e11" edge="1" parent="1" source="req-approved" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-instruction" value="Ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e12" edge="1" parent="1" source="req-approved" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-reject" value="Nein">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e13" edge="1" parent="1" source="req-reject" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-close" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e14" edge="1" parent="1" source="req-instruction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-work" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e15" edge="1" parent="1" source="req-work" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-test" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e16" edge="1" parent="1" source="req-test" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-done" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e17" edge="1" parent="1" source="req-done" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-feedback" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e18" edge="1" parent="1" source="req-feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-ok" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e19" edge="1" parent="1" source="req-ok" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-close" value="Ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-e20" edge="1" parent="1" source="req-ok" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" target="req-work" value="Nein">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="1010" />
+              <mxPoint x="780" y="1010" />
+              <mxPoint x="780" y="700" />
+              <mxPoint x="1005" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="system-overview" name="2 Systemübersicht">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ov-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="ITSM-System – Gesamtübersicht" vertex="1">
+          <mxGeometry x="60" y="20" width="1250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="Vom Hilfeportal bis zur Auswertung" vertex="1">
+          <mxGeometry x="60" y="70" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-user-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#8CA614;swimlaneFillColor=#FFFFFF;strokeColor=#8CA614;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="USER" vertex="1">
+          <mxGeometry x="40" y="120" width="330" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-system-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#5F4216;swimlaneFillColor=#E7E6E6;strokeColor=#5F4216;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="SYSTEM" vertex="1">
+          <mxGeometry x="370" y="120" width="730" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-it-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#8B6130;swimlaneFillColor=#FFFFFF;strokeColor=#8B6130;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="IT" vertex="1">
+          <mxGeometry x="1100" y="120" width="460" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#8CA614;strokeColor=#5F4216;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Calibri;" value="Hilfe oder Leistung benötigt" vertex="1">
+          <mxGeometry x="125" y="165" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-search" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Service oder Lösung suchen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Servicekatalog und Wissensartikel&lt;/font&gt;" vertex="1">
+          <mxGeometry x="85" y="300" width="245" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-form" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ticketformular ausfüllen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Incident oder Service Request&lt;/font&gt;" vertex="1">
+          <mxGeometry x="85" y="455" width="245" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-own" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Eigene Tickets ansehen&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;antworten und Lösung prüfen&lt;/font&gt;" vertex="1">
+          <mxGeometry x="85" y="700" width="245" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-catalog" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="SERVICEKATALOG&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Services, Kategorien und Zuständigkeiten&lt;/font&gt;" vertex="1">
+          <mxGeometry x="430" y="180" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-knowledge" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="WISSENSDATENBANK&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Anleitungen für häufige Probleme&lt;/font&gt;" vertex="1">
+          <mxGeometry x="755" y="180" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-type" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Störung oder&lt;br&gt;Standardanfrage?" vertex="1">
+          <mxGeometry x="640" y="400" width="190" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-ticket" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="TICKETVERWALTUNG&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Nummer, Status, Priorität, SLA,&lt;br&gt;Zuweisung und Verlauf&lt;/font&gt;" vertex="1">
+          <mxGeometry x="595" y="565" width="280" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-auto" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="AUTOMATISCHE REGELN&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Fristen, Warnungen und Benachrichtigungen&lt;/font&gt;" vertex="1">
+          <mxGeometry x="420" y="730" width="275" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-report" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="AUSWERTUNG&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Tickets, Zeiten und SLA-Einhaltung&lt;/font&gt;" vertex="1">
+          <mxGeometry x="770" y="730" width="275" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-queue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="IT-Warteschlange&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Neue, dringende und eigene Tickets&lt;/font&gt;" vertex="1">
+          <mxGeometry x="1200" y="235" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-work" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Ticket zuweisen und bearbeiten&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Kommentare, Notizen und Maßnahmen&lt;/font&gt;" vertex="1">
+          <mxGeometry x="1200" y="420" width="260" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-solve" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="Lösung dokumentieren&lt;br&gt;und User informieren" vertex="1">
+          <mxGeometry x="1200" y="610" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="ADMINISTRATION&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Services, Formulare, Rollen und SLA-Regeln&lt;/font&gt;" vertex="1">
+          <mxGeometry x="1200" y="780" width="260" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-e1" edge="1" parent="1" source="ov-start" target="ov-search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e2" edge="1" parent="1" source="ov-search" target="ov-form" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e3" edge="1" parent="1" source="ov-form" target="ov-type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e4" edge="1" parent="1" source="ov-type" target="ov-ticket" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e5" edge="1" parent="1" source="ov-ticket" target="ov-queue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e6" edge="1" parent="1" source="ov-queue" target="ov-work" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e7" edge="1" parent="1" source="ov-work" target="ov-solve" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e8" edge="1" parent="1" source="ov-solve" target="ov-own" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#5F4216;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e9" edge="1" parent="1" source="ov-catalog" target="ov-search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;dashed=1;strokeColor=#8B6130;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e10" edge="1" parent="1" source="ov-knowledge" target="ov-search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;dashed=1;strokeColor=#8B6130;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e11" edge="1" parent="1" source="ov-ticket" target="ov-auto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;dashed=1;strokeColor=#8B6130;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e12" edge="1" parent="1" source="ov-ticket" target="ov-report" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;dashed=1;strokeColor=#8B6130;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-e13" edge="1" parent="1" source="ov-admin" target="ov-ticket" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;dashed=1;strokeColor=#8B6130;fontColor=#5F4216;fontFamily=Calibri;" value="">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ov-k" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;Kenneth&lt;/b&gt;&lt;br&gt;Servicekatalog" vertex="1">
+          <mxGeometry x="410" y="855" width="190" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-f" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;Finn&lt;/b&gt;&lt;br&gt;Incidents und Prioritäten" vertex="1">
+          <mxGeometry x="640" y="855" width="210" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ov-a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;Anna&lt;/b&gt;&lt;br&gt;Standardanfragen" vertex="1">
+          <mxGeometry x="890" y="855" width="180" height="55" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="service-levels" name="3 Service Levels und SLA">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sla-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="Service Levels und SLA-Regeln" vertex="1">
+          <mxGeometry x="60" y="20" width="1250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="SLA = verbindliches Ziel für Reaktion und Lösung" vertex="1">
+          <mxGeometry x="60" y="70" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-p1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="HOCH&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Reaktion: 1 Stunde&lt;br&gt;Lösung: 4 Stunden&lt;br&gt;Statusmeldung: stündlich&lt;/font&gt;" vertex="1">
+          <mxGeometry x="90" y="145" width="390" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-p2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="MITTEL&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Reaktion: 4 Stunden&lt;br&gt;Lösung: 2 Arbeitstage&lt;br&gt;Statusmeldung: bei Änderungen&lt;/font&gt;" vertex="1">
+          <mxGeometry x="605" y="145" width="390" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-p3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="NIEDRIG&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Reaktion: 1–2 Arbeitstage&lt;br&gt;Lösung: 5 Arbeitstage&lt;br&gt;Statusmeldung: bei Bearbeitung und Abschluss&lt;/font&gt;" vertex="1">
+          <mxGeometry x="1120" y="145" width="390" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-impact" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;AUSWIRKUNG&lt;/b&gt;&lt;br&gt;&lt;br&gt;Hoch: Standort oder viele User&lt;br&gt;Mittel: mehrere User&lt;br&gt;Niedrig: ein User" vertex="1">
+          <mxGeometry x="90" y="335" width="330" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-plus" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="+" vertex="1">
+          <mxGeometry x="445" y="375" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-urgency" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;DRINGLICHKEIT&lt;/b&gt;&lt;br&gt;&lt;br&gt;Hoch: Arbeit unmöglich&lt;br&gt;Mittel: Arbeit eingeschränkt&lt;br&gt;Niedrig: planbar / geringe Auswirkung" vertex="1">
+          <mxGeometry x="530" y="335" width="330" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-arrow" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="ergibt" vertex="1">
+          <mxGeometry x="885" y="375" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-matrix" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;PRIORITÄTSMATRIX&lt;/b&gt;&lt;br&gt;&lt;br&gt;Auswirkung / Dringlichkeit&amp;nbsp;&amp;nbsp;&amp;nbsp;HOCH&amp;nbsp;&amp;nbsp;&amp;nbsp;MITTEL&amp;nbsp;&amp;nbsp;&amp;nbsp;NIEDRIG&lt;br&gt;Hoch&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hoch&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hoch&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mittel&lt;br&gt;Mittel&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hoch&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mittel&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mittel&lt;br&gt;Niedrig&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mittel&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mittel&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Niedrig" vertex="1">
+          <mxGeometry x="1000" y="320" width="510" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-hours" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;SERVICEZEITEN – ANNAHME&lt;/b&gt;&lt;br&gt;Montag bis Freitag, 08:00–17:00 Uhr, Feiertage ausgenommen.&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Muss vor Einführung von der IT bestätigt werden.&lt;/font&gt;" vertex="1">
+          <mxGeometry x="90" y="555" width="620" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-clock" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;START UND ENDE&lt;/b&gt;&lt;br&gt;Start: Eingang des Tickets&lt;br&gt;Reaktion erfüllt: erste qualifizierte IT-Antwort&lt;br&gt;Lösung erfüllt: Status „Gelöst“" vertex="1">
+          <mxGeometry x="790" y="555" width="720" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sla-rules" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;SLA-REGELN&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Automatische Eingangsbestätigung zählt nicht als Reaktion.&lt;br&gt;2. Bei „Wartet auf User“ oder „Wartet auf Genehmigung“ pausiert die Lösungszeit.&lt;br&gt;3. Bei 75 % der Zeit erhält der Bearbeiter eine Warnung.&lt;br&gt;4. Bei 100 % wird das Ticket eskaliert und als „SLA überschritten“ markiert.&lt;br&gt;5. Lehnt der User die Lösung ab, wird das Ticket wieder geöffnet und die Zeit läuft weiter.&lt;br&gt;6. Die IT darf eine Priorität nur mit dokumentierter Begründung ändern." vertex="1">
+          <mxGeometry x="90" y="705" width="1420" height="205" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="roles-guide" name="6 Rollen und Arbeitsanweisung">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="Rollen und Arbeitsanweisungen" vertex="1">
+          <mxGeometry x="60" y="20" width="1250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="g-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="Wer muss wann was tun?" vertex="1">
+          <mxGeometry x="60" y="70" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="g-user-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#8CA614;swimlaneFillColor=#FFFFFF;strokeColor=#8CA614;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="USER" vertex="1">
+          <mxGeometry x="40" y="120" width="470" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="g-it-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#8B6130;swimlaneFillColor=#FFFFFF;strokeColor=#8B6130;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="IT" vertex="1">
+          <mxGeometry x="510" y="120" width="590" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="g-admin-lane" parent="1" style="swimlane;html=1;horizontal=0;startSize=55;fillColor=#5F4216;swimlaneFillColor=#E7E6E6;strokeColor=#5F4216;fontStyle=1;fontSize=16;rounded=0;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Calibri;" value="ADMIN" vertex="1">
+          <mxGeometry x="1100" y="120" width="460" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="g-user-steps" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;BEI EINER STÖRUNG ODER ANFRAGE&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Passenden IT-Service auswählen.&lt;br&gt;2. Incident oder Service Request auswählen.&lt;br&gt;3. Alle Pflichtfelder vollständig ausfüllen.&lt;br&gt;4. Fehlermeldung oder Screenshot ergänzen.&lt;br&gt;5. Ticket absenden und Ticketnummer notieren.&lt;br&gt;6. Rückfragen der IT beantworten.&lt;br&gt;7. Vorgeschlagene Lösung testen.&lt;br&gt;8. „Gelöst“ bestätigen oder Problem beschreiben.&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Bei Telefon oder persönlicher Meldung darf der Service Desk das Ticket stellvertretend erfassen.&lt;/font&gt;" vertex="1">
+          <mxGeometry x="95" y="185" width="360" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="g-user-see" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;DER USER SIEHT&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Ticketnummer und Erstellungszeit&lt;br&gt;• Status und Priorität&lt;br&gt;• öffentliche IT-Antworten&lt;br&gt;• zuständiges Team&lt;br&gt;• Lösung und Abschluss" vertex="1">
+          <mxGeometry x="95" y="640" width="360" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="g-it-steps" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;BEI JEDEM NEUEN TICKET&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Vollständigkeit und Ticketart prüfen.&lt;br&gt;2. Service, Duplikate, Priorität und SLA prüfen.&lt;br&gt;3. Team und Bearbeiter zuweisen.&lt;br&gt;4. Erste qualifizierte Antwort senden.&lt;br&gt;5. Incident: Standardlösung anwenden oder analysieren und eskalieren.&lt;br&gt;6. Request: Genehmigung prüfen und Standardarbeitsanweisung ausführen.&lt;br&gt;7. Funktion beziehungsweise Ergebnis testen.&lt;br&gt;8. Maßnahmen, Status und Lösung dokumentieren.&lt;br&gt;9. User informieren und Rückmeldung abwarten.&lt;br&gt;10. Bei Ablehnung weiterbearbeiten, sonst schließen." vertex="1">
+          <mxGeometry x="570" y="185" width="470" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="g-it-note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;WICHTIG&lt;/b&gt;&lt;br&gt;&lt;br&gt;Öffentliche Kommentare sind für den User sichtbar.&lt;br&gt;Interne Notizen sind nur für die IT sichtbar.&lt;br&gt;Eine Prioritätsänderung benötigt eine Begründung." vertex="1">
+          <mxGeometry x="570" y="675" width="470" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="g-admin-steps" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;VOR DEM BETRIEB&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Services und Kategorien pflegen.&lt;br&gt;2. Incident- und Request-Typen zuordnen.&lt;br&gt;3. Pflichtfelder festlegen.&lt;br&gt;4. Teams und Zuständigkeiten hinterlegen.&lt;br&gt;5. SLA-Ziele und Servicezeiten bestätigen.&lt;br&gt;6. Genehmigungen definieren.&lt;br&gt;7. Rollen und Berechtigungen vergeben.&lt;br&gt;8. Benachrichtigungen konfigurieren.&lt;br&gt;9. Testtickets durchführen.&lt;br&gt;10. Kennzahlen regelmäßig kontrollieren." vertex="1">
+          <mxGeometry x="1150" y="185" width="360" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="g-sources" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;GRUNDLAGEN AUS DEM GEMEINSCHAFTSPROJEKT&lt;/b&gt;&lt;br&gt;&lt;br&gt;Kenneth: Services und Kategorien&lt;br&gt;Finn: Incidents, Prioritäten und Testtickets&lt;br&gt;Anna: Standardanfragen und Pflichtfelder&lt;br&gt;Mark: Gesamtprozess, Rollen, SLA und Systembeschreibung&lt;br&gt;Erion: Tests, Feedback und Verbesserungen" vertex="1">
+          <mxGeometry x="1150" y="675" width="360" height="155" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ticket-operations" name="7 Ticketdaten und Betrieb">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="op-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="Ticketdaten, Status und laufender Betrieb" vertex="1">
+          <mxGeometry x="60" y="20" width="1250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="op-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="Diese Regeln gelten unabhängig davon, über welchen Kanal ein Ticket eingeht" vertex="1">
+          <mxGeometry x="60" y="70" width="1100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="op-fields" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;PFLICHTDATEN JE TICKET&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Ticketnummer und Ticketart&lt;br&gt;• Ersteller und betroffene Person&lt;br&gt;• Service und Kategorie&lt;br&gt;• Kurzbeschreibung und Details&lt;br&gt;• Auswirkung, Dringlichkeit und Priorität&lt;br&gt;• Status, Team und Bearbeiter&lt;br&gt;• Erstellung, letzte Änderung und SLA-Zeiten&lt;br&gt;• öffentliche Kommentare und interne Notizen&lt;br&gt;• Anhänge, Lösung und Abschlussgrund&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Incident zusätzlich: Beginn, Betroffene, Arbeitsfähigkeit.&lt;br&gt;Request zusätzlich: gewünschter Termin, Genehmiger.&lt;/font&gt;" vertex="1">
+          <mxGeometry x="60" y="145" width="460" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="op-status" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;ERLAUBTE STATUS&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Neu&lt;/b&gt; – noch nicht geprüft&lt;br&gt;&lt;b&gt;Zugewiesen&lt;/b&gt; – Team oder Bearbeiter festgelegt&lt;br&gt;&lt;b&gt;In Bearbeitung&lt;/b&gt; – aktive Diagnose oder Erfüllung&lt;br&gt;&lt;b&gt;Wartet auf User&lt;/b&gt; – Rückfrage offen, Lösungszeit pausiert&lt;br&gt;&lt;b&gt;Wartet auf Genehmigung&lt;/b&gt; – nur Request, Zielzeit pausiert&lt;br&gt;&lt;b&gt;Gelöst / Erfüllt&lt;/b&gt; – User soll Ergebnis prüfen&lt;br&gt;&lt;b&gt;Abgelehnt / Abgebrochen&lt;/b&gt; – mit Begründung beendet&lt;br&gt;&lt;b&gt;Geschlossen&lt;/b&gt; – bestätigt und nicht mehr bearbeitbar&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Lehnt der User die Lösung ab, wechselt das Ticket zurück zu „In Bearbeitung“.&lt;/font&gt;" vertex="1">
+          <mxGeometry x="570" y="145" width="460" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="op-queues" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;IT-WARTESCHLANGEN&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Neue Tickets&lt;br&gt;2. Nicht zugewiesen&lt;br&gt;3. Meine Tickets&lt;br&gt;4. Hohe Priorität&lt;br&gt;5. SLA-Warnung&lt;br&gt;6. SLA überschritten&lt;br&gt;7. Wartet auf IT&lt;br&gt;8. Wartet auf User&lt;br&gt;9. Wartet auf Genehmigung&lt;br&gt;10. Gelöst – Bestätigung offen&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Sortierung: zuerst SLA-Restzeit, danach Priorität und Eingangszeit.&lt;/font&gt;" vertex="1">
+          <mxGeometry x="1080" y="145" width="460" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="op-notify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8CA614;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;BENACHRICHTIGUNGEN&lt;/b&gt;&lt;br&gt;&lt;br&gt;Der User wird informiert bei:&lt;br&gt;• Eingang und Ticketnummer&lt;br&gt;• öffentlicher IT-Antwort oder Rückfrage&lt;br&gt;• Statusänderung&lt;br&gt;• Genehmigung oder Ablehnung&lt;br&gt;• Lösung beziehungsweise Erfüllung&lt;br&gt;• automatischem Abschluss&lt;br&gt;&lt;br&gt;Die IT wird informiert bei:&lt;br&gt;• neuer Zuweisung&lt;br&gt;• User-Antwort&lt;br&gt;• 75 % der SLA-Zeit&lt;br&gt;• SLA-Überschreitung" vertex="1">
+          <mxGeometry x="60" y="550" width="700" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="op-report" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7E6E6;strokeColor=#8B6130;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;AUSWERTUNG UND VERBESSERUNG&lt;/b&gt;&lt;br&gt;&lt;br&gt;Mindestens monatlich auswerten:&lt;br&gt;• Tickets nach Service, Typ und Priorität&lt;br&gt;• durchschnittliche Reaktions- und Lösungszeit&lt;br&gt;• SLA eingehalten / überschritten&lt;br&gt;• wiedereröffnete Tickets&lt;br&gt;• häufig wiederkehrende Incidents&lt;br&gt;• abgelehnte Requests&lt;br&gt;• User-Feedback beziehungsweise Zufriedenheit&lt;br&gt;&lt;br&gt;Wiederkehrende Incidents werden als mögliches Problem markiert. Erion verwendet diese Werte für Tests und Verbesserungsvorschläge." vertex="1">
+          <mxGeometry x="820" y="550" width="720" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="op-rule" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;GRUNDREGEL:&lt;/b&gt; Jede Änderung an Status, Priorität, Zuweisung, Genehmigung oder Lösung wird mit Zeitpunkt und verantwortlicher Person im Verlauf gespeichert." vertex="1">
+          <mxGeometry x="270" y="875" width="1060" height="65" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="acceptance-tests" name="8 Tests und Abnahme">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="test-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=28;fontStyle=0;fontColor=#5F4216;fontFamily=Calibri;" value="Testfälle und Abnahmekriterien" vertex="1">
+          <mxGeometry x="60" y="20" width="1250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="test-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#8B6130;fontFamily=Calibri;" value="Mit diesen Fällen wird geprüft, ob Prozess, Rollen und Service Levels verständlich funktionieren" vertex="1">
+          <mxGeometry x="60" y="70" width="1100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="test-left" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;TESTFÄLLE 1–4: INCIDENTS&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;1. Kritischer Ausfall&lt;/b&gt;&lt;br&gt;Viele User können nicht arbeiten. Erwartung: Priorität Hoch, sofortige Zuweisung, Reaktionsziel 1 Stunde.&lt;br&gt;&lt;br&gt;&lt;b&gt;2. Einzelner User mit Umgehungslösung&lt;/b&gt;&lt;br&gt;Erwartung: Auswirkung Niedrig, Dringlichkeit Mittel, Priorität Mittel.&lt;br&gt;&lt;br&gt;&lt;b&gt;3. Bekannte Störung&lt;/b&gt;&lt;br&gt;Erwartung: passende Standardlösung wird verwendet, getestet und dokumentiert.&lt;br&gt;&lt;br&gt;&lt;b&gt;4. Unbekannte Störung&lt;/b&gt;&lt;br&gt;Erwartung: Diagnose, dokumentierte Eskalation und Rückgabe der Lösung an den Service Desk." vertex="1">
+          <mxGeometry x="60" y="145" width="710" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="test-right" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B6130;fontColor=#000000;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;fontSize=12;fontFamily=Calibri;" value="&lt;b&gt;TESTFÄLLE 5–8: SERVICE REQUESTS&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;5. Vorab genehmigter Request&lt;/b&gt;&lt;br&gt;Erwartung: keine Genehmigungswartezeit; Standardarbeitsanweisung startet direkt.&lt;br&gt;&lt;br&gt;&lt;b&gt;6. Genehmigung erforderlich&lt;/b&gt;&lt;br&gt;Erwartung: Status „Wartet auf Genehmigung“, pausierte Zielzeit, danach Erfüllung.&lt;br&gt;&lt;br&gt;&lt;b&gt;7. Request abgelehnt&lt;/b&gt;&lt;br&gt;Erwartung: Begründung für User, Status „Abgelehnt“, keine Erfüllung.&lt;br&gt;&lt;br&gt;&lt;b&gt;8. Unvollständige Angaben&lt;/b&gt;&lt;br&gt;Erwartung: Rückfrage an User; nach Ergänzung wird dieselbe Anfrage weitergeführt." vertex="1">
+          <mxGeometry x="830" y="145" width="710" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="test-accept" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F4216;fontColor=#000000;fontSize=13;fontStyle=1;fontFamily=Calibri;" value="&lt;b&gt;ABNAHMEKRITERIEN – ALLE MÜSSEN ERFÜLLT SEIN&lt;/b&gt;&lt;br&gt;&lt;br&gt;□ Jedes Ticket besitzt Nummer, Zeitstempel, Typ, Service, Status, Zuständigkeit und Verlauf.&lt;br&gt;□ Der User sieht öffentliche Antworten, aber keine internen IT-Notizen.&lt;br&gt;□ Priorität entsteht nachvollziehbar aus Auswirkung und Dringlichkeit.&lt;br&gt;□ Reaktions- und Lösungsziele werden getrennt gemessen.&lt;br&gt;□ SLA-Pause und Wiederaufnahme funktionieren gemäß den dokumentierten Regeln.&lt;br&gt;□ Ein Request mit Genehmigung kann nicht vor der Freigabe erfüllt werden.&lt;br&gt;□ Ein ungelöstes Ticket gelangt zurück zur Bearbeitung.&lt;br&gt;□ Ein Ticket wird erst nach User-Bestätigung oder dokumentierter Abschlussregel geschlossen.&lt;br&gt;□ Kennzahlen stimmen mit den vorhandenen Tickets überein.&lt;br&gt;□ Kenneths Services, Finns Testtickets und Annas Request-Typen sind korrekt eingebunden." vertex="1">
+          <mxGeometry x="160" y="650" width="1280" height="270" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
